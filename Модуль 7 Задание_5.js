@@ -15,10 +15,7 @@ class ElectricalDevice {
 
 class Lamp extends ElectricalDevice {
     constructor(name, manufacturer,powerElectricalDevice, turnElectricalDevice, type) {
-        super(name);
-        this.manufacturer = manufacturer;
-        this.powerElectricalDevice = powerElectricalDevice;
-        this.turnElectricalDevice = turnElectricalDevice;
+        super(name, manufacturer, powerElectricalDevice, turnElectricalDevice);
         this.type = type;
     }
 
@@ -31,10 +28,7 @@ class Lamp extends ElectricalDevice {
 
 class Computer extends ElectricalDevice {
     constructor(name, manufacturer,powerElectricalDevice, turnElectricalDevice,type,display) {
-        super(name);
-        this.manufacturer = manufacturer;
-        this.powerElectricalDevice = powerElectricalDevice;
-        this.turnElectricalDevice = turnElectricalDevice;
+        super(name, manufacturer, powerElectricalDevice, turnElectricalDevice);
         this.type = type;
         this.display = display;
     }
